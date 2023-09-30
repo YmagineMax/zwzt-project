@@ -1,0 +1,8 @@
+body {
+    background-color: #053B50;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
