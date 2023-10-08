@@ -116,24 +116,38 @@ header{
 }
 
 .carousel-inner {
-    background-color: #053B50; /* This is the background color from your CSS */
+    background-color: #053B50; 
 }
 
 .carousel-item img {
     width: 100%;
-    max-height: 600px; /* Adjust this value to your desired height */
+    max-height: 600px; 
     object-fit: cover;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
 }
 
 .carousel-control-prev, .carousel-control-next {
-    width: auto; /* Reset the default width */
-    padding: 0 1%; /* Add some padding to move them towards the edges */
+    width: auto; 
+    padding: 0 1%; 
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 20px; /* Adjust the size if needed */
+    width: 20px; 
     height: 20px;
+}
+
+#carousel-login {
+    padding: 9px 25px;
+    background-color: rgba(100, 204, 197, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+
+#carousel-login:hover {
+    background-color: rgba(100, 204, 197, 0.8);
 }
 
 
@@ -152,9 +166,9 @@ header{
 
     #nav_bar_button {
         display: block;
-        margin: 5px auto;
-        padding: 5px 25px;
+        padding: 5px 10px;
         font-size: 15px;
+        width: 150px;
     }
     
     .cta{
@@ -177,6 +191,7 @@ header{
     .nav__links a {
         padding: .5rem .5rem;
         line-height: 40px;
+        font-size: 20px;
     }
 
     .nav__links.active{
@@ -203,9 +218,10 @@ header{
     font-size: 10px; 
     }
 
-    #nav_bar_button {
-        padding: 5px 10px;
+    #carousel-login {
+        padding: 5px 15px;
         font-size: 10px; 
+        margin-left: 100px;
     }
 }
 
