@@ -150,6 +150,27 @@ header{
     background-color: rgba(100, 204, 197, 0.8);
 }
 
+.section-header{
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 35px;
+}
+
+.section-sub-header{
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.partner-logo {
+    max-width: 5%
+}
 
 
 /*Mobile version*/ 
@@ -222,6 +243,19 @@ header{
         padding: 5px 15px;
         font-size: 10px; 
         margin-left: 100px;
+    }
+
+    .section-header {
+        font-size: 25px;
+    }
+    
+    .section-sub-header{
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .partner-logo {
+        max-width: 15%
     }
 }
 
