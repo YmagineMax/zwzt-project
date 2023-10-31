@@ -19,6 +19,7 @@
     
 </head>
 <body>
+  <!--Header with hamburger menu and log/register button-->
     <header><img class = "logo" src="resources/logo-nav.png" alt = logo>
         <nav>
             <a href="#"class="toggle-button">
@@ -29,14 +30,14 @@
             <ul class="nav__links">
                 <li><a href="#">O nas</a></li>
                 <li><a href="#">Partnerzy</a></li>
-                <li><a href="#">Wesprzyj nas</a></li>
+                <li><a href="#">Ranking</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Aktualne wyzwania</a></li>
                 <li><a class="cta" href="#"><button id="nav_bar_button">Zaloguj się</button></a></li>
             </ul>
         </nav>
     </header>
-    
+    <!--Info carousel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -49,7 +50,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Lorem ipsum</h5>
               <p>In tortor erat, ullamcorper vitae lacus et, auctor maximus leo. Aenean vehicula elit quis egestas bibendum. Duis vitae nisi metus. Morbi et fermentum erat. Aliquam commodo finibus interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. In eu leo volutpat risus venenatis fringilla. Mauris vitae quam ullamcorper, dictum lorem ac, auctor magna. Integer ornare mauris quis ante pretium, sit amet finibus lacus viverra..</p>
-                <a class="cta" href="#"><button id="carousel-login">Zaloguj się</button></a>
+              <!--Login/Register button-->  
+              <a class="cta" href="#"><button id="carousel-login">Zaloguj się</button></a>
               </div>
           </div>
           <div class="carousel-item">
@@ -57,6 +59,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Lorem ipsum</h5>
               <p>In tortor erat, ullamcorper vitae lacus et, auctor maximus leo. Aenean vehicula elit quis egestas bibendum. Duis vitae nisi metus. Morbi et fermentum erat. Aliquam commodo finibus interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. In eu leo volutpat risus venenatis fringilla. Mauris vitae quam ullamcorper, dictum lorem ac, auctor magna. Integer ornare mauris quis ante pretium, sit amet finibus lacus viverra..</p>
+              <!--Login/Register button--> 
               <a class="cta" href="#"><button id="carousel-login">Zaloguj się</button></a>
             </div>
           </div>
@@ -65,6 +68,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Lorem ipsum</h5>
               <p>In tortor erat, ullamcorper vitae lacus et, auctor maximus leo. Aenean vehicula elit quis egestas bibendum. Duis vitae nisi metus. Morbi et fermentum erat. Aliquam commodo finibus interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. In eu leo volutpat risus venenatis fringilla. Mauris vitae quam ullamcorper, dictum lorem ac, auctor magna. Integer ornare mauris quis ante pretium, sit amet finibus lacus viverra..</p>
+              <!--Login/Register button--> 
               <a class="cta" href="#"><button id="carousel-login">Zaloguj się</button></a>
             </div>
           </div>
@@ -78,12 +82,14 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!--Partners carousel-->
       <section class="partners">
         <h1 class="section-header">Partnerzy</h1>
         <h3 class="section-sub-header">Dzięki, którym nasz projekt jest realizowany!</h3>
         <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-              <!-- Slide 1 with 3 partners -->
+            <!--Carousel page 1--> 
               <div class="carousel-item active">
                   <div class="d-flex justify-content-around">
                       <img src="/zwzt-project/resources/logo-nav.png" class="partner-logo" alt="Partner 1">
@@ -91,8 +97,7 @@
                       <img src="/zwzt-project/resources/logo-nav.png" class="partner-logo" alt="Partner 3">
                   </div>
               </div>
-              
-              <!-- Slide 2 with 3 partners -->
+              <!--Carousel page 2--> 
               <div class="carousel-item">
                   <div class="d-flex justify-content-around">
                       <img src="/zwzt-project/resources/logo-nav.png" class="partner-logo" alt="Partner 4">
@@ -100,11 +105,7 @@
                       <img src="/zwzt-project/resources/logo-nav.png" class="partner-logo" alt="Partner 6">
                   </div>
               </div>
-      
-              <!-- Add more slides as needed... -->
           </div>
-      
-          <!-- Carousel controls -->
           <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -114,6 +115,27 @@
               <span class="visually-hidden">Next</span>
           </button>
       </div>
+      </section>
+
+      <!--Challanges section--> 
+      <section class="challanges">
+        <h1 class="section-header">Aktualne wyzwania</h1>
+      <!-- Example of a card-->
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/zwzt-project/resources/placeholder1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Case study dot. zagospodarowania miejsca</h5>
+            <p class="card-text">Dzisiaj weźmiesz udział w casie, gdzie zagoposdarujesz przestrzen biurowa.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Pula nagród: 15zł</li>
+            <li class="list-group-item">nie wiem co tutaj x)</li>
+            <li class="list-group-item">Deadline: <p id="challange-date-time">x</p></li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Weź udział</a>
+          </div>
+        </div>
       </section>
 
 

@@ -172,6 +172,13 @@ header{
     max-width: 5%
 }
 
+.card{
+    background-color: #176B87;
+}
+
+.card-body{
+    color: #EEEEEE;
+}
 
 /*Mobile version*/ 
 
@@ -257,10 +264,59 @@ header{
     .partner-logo {
         max-width: 15%
     }
+
+    
 }
 
 
-/*Small laptop version*/ 
+/*Tablet version*/ 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    header{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
 
+    .nav__links li a{
+        font-size: 12px;
+        padding: 0px;
+    }
 
-/*Tabel version*/ 
+    #nav_bar_button {
+        padding: 5px 15px; 
+        font-size: 10px;  
+    }
+
+    .logo, .logo a {
+        width: 50px; /* Adjust to your desired size */
+        height: auto; /* This maintains the aspect ratio */
+        display: inline-block; /* Ensures it doesn't force a new line */
+    }
+
+    .partner-logo {
+        max-width: 10%
+    }
+
+}
+
+/*Laptop version*/ 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        margin: 20px;
+        
+    }
+
+    .nav__links li a{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #nav_bar_button {
+        padding: 10px 15px; 
+        font-size: 15px;  
+    }
+}
