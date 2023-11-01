@@ -17,6 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
 <body>
   <!--Header with hamburger menu and log/register button-->
@@ -120,26 +121,73 @@
       <!--Challanges section--> 
       <section class="challanges">
         <h1 class="section-header">Aktualne wyzwania</h1>
-      <!-- Example of a card-->
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/zwzt-project/resources/placeholder1.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Case study dot. zagospodarowania miejsca</h5>
-            <p class="card-text">Dzisiaj weźmiesz udział w casie, gdzie zagoposdarujesz przestrzen biurowa.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Pula nagród: 15zł</li>
-            <li class="list-group-item">nie wiem co tutaj x)</li>
-            <li class="list-group-item">Deadline: <p id="challange-date-time">x</p></li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Weź udział</a>
-          </div>
-        </div>
+          <!--@mariofornaroli event card design - shoutout! -->
+          <div class="challange-container">
+            <div class="item-container">
+                <div class="img-container">
+                    <img src="/zwzt-project/resources/placeholder1.png" alt="Event image">
+                </div>
+                <div class="body-container">
+                    <div class="overlay"></div>
+    
+                    <div class="event-info">
+                        <p class="title">Wyzwanie ekologiczne</p>
+                        <div class="separator"></div>
+                        <p class="info-partner">EY Polska</p>
+                        <p class="prize">Pula nagród: 3000 zł</p>
+    
+                        <div class="additional-info">
+                            <p class="info">
+                              <i class="fa-solid fa-school"></i>
+                                Dla: Szkoła Średnia
+                            </p>
+                            <p class="info">
+                                <i class="far fa-calendar-alt"></i>
+                                Sat, Sep 19, 10:00 AM EDT
+                            </p>
+    
+                            <p class="info description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit? <span>more...</span>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="action">Weź udział</button>
+                </div>
+            </div>
+            <div class="item-container">
+              <div class="img-container">
+                  <img src="/zwzt-project/resources/logo-2.png" alt="Event image">
+              </div>
+              <div class="body-container">
+                  <div class="overlay"></div>
+  
+                  <div class="event-info">
+                      <p class="title">Wyzwanie ekologiczne</p>
+                      <div class="separator"></div>
+                      <p class="info-partner">PWC</p>
+                      <p class="prize">Pula nagród: 2000 zł</p>
+                      <div class="additional-info">
+                          <p class="info">
+                            <i class="fa-solid fa-school"></i>
+                              Dla: Szkół Wyższych
+                          </p>
+                          <p class="info">
+                              <i class="far fa-calendar-alt"></i>
+                              Deadline: 12.12.2012
+                          </p>
+  
+                          <p class="info description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit? <span>more...</span>
+                          </p>
+                      </div>
+                  </div>
+                  <button class="action">Weź udział</button>
+              </div>
       </section>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src = script.js defer></script>
+<script src="https://kit.fontawesome.com/1efac5fb55.js" crossorigin="anonymous"></script>
 </html>
