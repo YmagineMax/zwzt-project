@@ -312,6 +312,21 @@ header{
     background-color: rgba(100, 204, 197, 0.2);
 }
 
+.completed-challanges {
+    display: flex;
+    justify-content: center;
+}
+
+#cmted_chall_btn{
+    padding: 9px 25px;
+    background-color: rgba(100, 204, 197, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+
 /*Mobile version*/ 
 
 @media (max-width: 426px) {
@@ -396,7 +411,6 @@ header{
     .partner-logo {
         max-width: 15%
     }
-
     
 }
 
