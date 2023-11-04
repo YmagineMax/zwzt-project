@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #053B50;
+    scroll-behavior: smooth;
 }
 
 li, a, button{
@@ -181,7 +182,7 @@ header{
 }
 
 
-.challange-container {
+.challenge-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -312,7 +313,7 @@ header{
     background-color: rgba(100, 204, 197, 0.2);
 }
 
-.completed-challanges {
+.completed-challenges {
     display: flex;
     justify-content: center;
 }
@@ -326,6 +327,47 @@ header{
     transition: all 0.3s ease 0s;
     outline: none;
 }
+
+#sec_cmted {
+    display: none; 
+  }
+  
+.show_cmpted {
+    display: flex;
+    justify-content: center;
+}
+
+.extended-info{
+    display: none;
+    background-color: #EEEEEE;
+}
+
+.extended-info {
+    display: none; /* Keep this as is */
+    position: fixed; /* Position it relative to the viewport */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    z-index: 10; /* Make sure it's on top of other content */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%; /* Adjust as needed */
+    margin: auto; /* Center the modal content horizontally */
+  }
+
+  .close-button {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
 /*Mobile version*/ 
 
