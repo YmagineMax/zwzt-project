@@ -29,14 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.style.display = 'none';
     }
   
-    // Open the modal when the challenge container is clicked
-    document.querySelectorAll('.challenge-container').forEach(container => {
-      container.addEventListener('click', (event) => {
+    // Open the modal when the action button is clicked
+    document.querySelectorAll('.action').forEach(button => {
+      button.addEventListener('click', (event) => {
         // Prevent the click from affecting parent elements
         event.stopPropagation();
   
-        // Open the modal
-        const extendedInfo = container.querySelector('.extended-info');
+        // Find the closest item-container ancestor to the button and then find the extended-info within it
+        const itemContainer = button.closest('.item-container');
+        const extendedInfo = itemContainer.querySelector('.extended-info');
         extendedInfo.style.display = 'flex'; // Use 'flex' to center the modal content
       });
     });
@@ -52,5 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
         closeModal(extendedInfo);
       });
     });
-  });
   
+    // Optional: Close the modal when clicking outside of it
+    window.addEventListener('click', (event) => {
+      if (event.target.classList.contains('extended-info')) {
+        closeModal(event.target);
+      }
+    });
+  });
