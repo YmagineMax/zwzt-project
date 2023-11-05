@@ -340,6 +340,7 @@ header{
 .extended-info{
     display: none;
     background-color: #EEEEEE;
+    cursor: default;
 }
 
 .extended-info {
@@ -361,6 +362,7 @@ header{
     border-radius: 5px;
     width: 90%; /* Adjust as needed */
     margin: auto; /* Center the modal content horizontally */
+    cursor: default;
   }
 
   .close-button {
@@ -368,6 +370,11 @@ header{
     font-size: 30px;
     cursor: pointer;
   }
+
+.modal-content a,
+.modal-content .button {
+  cursor: pointer; /* Only actual clickable items inside the modal content get a pointer cursor */
+}
 
 /*Mobile version*/ 
 

@@ -23,14 +23,34 @@ toggleCompletedChallengesBtn.addEventListener('click', () => {
   }
 });
 
-document.querySelectorAll('.challenge-container').forEach(container => {
-    container.addEventListener('click', (event) => {
-      // Prevent click event from affecting parent elements
-      event.stopPropagation();
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to close the modal
+    function closeModal(modal) {
+      modal.style.display = 'none';
+    }
   
-      const extendedInfo = container.querySelector('.extended-info');
-      const isVisible = extendedInfo.style.display === 'block';
-      extendedInfo.style.display = isVisible ? 'none' : 'block';
+    // Open the modal when the challenge container is clicked
+    document.querySelectorAll('.challenge-container').forEach(container => {
+      container.addEventListener('click', (event) => {
+        // Prevent the click from affecting parent elements
+        event.stopPropagation();
+  
+        // Open the modal
+        const extendedInfo = container.querySelector('.extended-info');
+        extendedInfo.style.display = 'flex'; // Use 'flex' to center the modal content
+      });
+    });
+  
+    // Close the modal when the close button is clicked
+    document.querySelectorAll('.close-button').forEach(button => {
+      button.addEventListener('click', (event) => {
+        // Prevent the click from affecting parent elements
+        event.stopPropagation();
+  
+        // Close the modal
+        const extendedInfo = button.closest('.extended-info');
+        closeModal(extendedInfo);
+      });
     });
   });
   
