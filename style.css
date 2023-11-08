@@ -6,6 +6,8 @@ body {
     padding: 0;
     background-color: #053B50;
     scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 li, a, button{
@@ -244,7 +246,7 @@ header{
 .title,
 .prize {
     color: #053B50;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 1px;
     margin: 12px;
@@ -375,6 +377,43 @@ header{
 .modal-content .button {
   cursor: pointer; /* Only actual clickable items inside the modal content get a pointer cursor */
 }
+
+.about-us-container {
+    display: block;
+    margin: auto;
+    
+}
+
+.about-us-content{
+    float: left;
+    width: 55%;
+}
+
+.about-us-img{
+    float: right;
+    width: 40%;
+}
+
+.img-about-us{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.about-us-text{
+    color: #EEEEEE;
+    padding: 15px;
+}
+
+.about-us-content .socials i{
+    margin-top: 40px;
+    font-size: 50px;
+    padding: 0px 10px;
+}
+
+.about-us-content .socials i:hover{
+    color: #64CCC5;
+}
+
 
 /*Mobile version*/ 
 
