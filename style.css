@@ -358,7 +358,7 @@ header{
     align-items: center;
   }
   
-  .modal-content {
+.modal-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -367,7 +367,7 @@ header{
     cursor: default;
   }
 
-  .close-button {
+.close-button {
     float: right;
     font-size: 30px;
     cursor: pointer;
@@ -375,43 +375,65 @@ header{
 
 .modal-content a,
 .modal-content .button {
-  cursor: pointer; /* Only actual clickable items inside the modal content get a pointer cursor */
+    cursor: pointer; /* Only actual clickable items inside the modal content get a pointer cursor */
+    }
+
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px;
+    background-color: #053B50;
+    margin-top: 50px;
 }
 
-.about-us-container {
-    display: block;
-    margin: auto;
-    
-}
-
-.about-us-content{
-    float: left;
-    width: 55%;
-}
-
-.about-us-img{
-    float: right;
-    width: 40%;
-}
-
-.img-about-us{
-    width: 100%;
-    height: auto;
-    padding: 50px;
-}
-.about-us-text{
+.about-us-text p {
     color: #EEEEEE;
-    padding: 15px;
 }
 
-.about-us-content .socials i{
-    margin-top: 40px;
+.socials i{
     font-size: 50px;
-    padding: 0px 10px;
+    margin: 20px;
 }
 
-.about-us-content .socials i:hover{
+.socials i:hover{
     color: #64CCC5;
+}
+.abt-us-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-us-text {
+    flex: 1 1 60%; /* 60% of the container's width */
+    padding-right: 20px;
+  }
+
+.about-us-photo {
+    flex: 1 1 40%; /* 40% of the container's width */
+    text-align: center;
+}
+
+.about-us-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
+
+.ranking{
+    display: flex;
+    justify-content: center;
 }
 
 
