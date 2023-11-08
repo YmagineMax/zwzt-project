@@ -436,6 +436,66 @@ header{
     justify-content: center;
 }
 
+.faq{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    width: 100%;
+    background: #176B87;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(100, 204, 197, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question::after {
+    content: '\002B';
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* This will be the target height for the answer to expand. Adjust as needed. */
+.faq-answer.active {
+    max-height: 200px; /* Adjust this value based on your content */
+}
+
+.faq-answer p {
+    color: #EEEEEE;
+}
+
 
 /*Mobile version*/ 
 
