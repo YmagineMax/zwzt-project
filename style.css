@@ -521,7 +521,40 @@ header{
     .partner-logo {
         max-width: 15%
     }
+    .img-container{
+        width: 100px;
+        height: 100px;
+    }
+    .item-container {
+        width: 100px; /* 2 items per row with the given margin */
+        height: 300px;
+    }
+
+    .title{
+        font-size: 12px;
+    }
+
+    .separator{
+        height: 2px;
+    }
     
+    .action{
+        font-size: 6px;
+    }
+
+    .overlay{
+        height: 100px;
+        width: 100px;
+    }
+
+    .prize{
+        font-size: 12px;
+    }
+
+    #cmted_chall_btn{
+        font-size: 12px;
+    }
+
 }
 
 
@@ -553,6 +586,8 @@ header{
     .partner-logo {
         max-width: 10%
     }
+    
+
 
 }
 
