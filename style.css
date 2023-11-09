@@ -414,7 +414,7 @@ header{
     justify-content: space-between;
   }
 
-  .about-us-text {
+.about-us-text {
     flex: 1 1 60%; /* 60% of the container's width */
     padding-right: 20px;
   }
@@ -494,6 +494,41 @@ header{
 
 .faq-answer p {
     color: #EEEEEE;
+}
+.site-footer {
+    margin-top: 50px;
+    background-color: #176B87;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-footer h3 {
+    color: #fff;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
 }
 
 
@@ -614,6 +649,23 @@ header{
     #cmted_chall_btn{
         font-size: 12px;
     }
+    
+    .socials i{
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .about-us-text p{
+        font-size: 11px;
+    }
+
+    .about-us-photo img {
+        max-width: 117.5%;
+        height: auto;
+        border-radius: 10px; /* Optional: for rounded corners */
+      }
+
+    
 
 }
 
