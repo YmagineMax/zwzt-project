@@ -37,6 +37,18 @@
                 <li><a class="cta" href="#"><button id="nav_bar_button">Zaloguj się</button></a></li>
             </ul>
         </nav>
+        <div id="loginModal" class="modal-login">
+          <div class="modal-content-login">
+            <span class="close">&times;</span>
+            <form id="loginForm">
+              <h2>Log In</h2>
+              <input type="text" placeholder="Username" name="username" required>
+              <input type="password" placeholder="Password" name="password" required>
+              <button type="submit">Log In</button>
+              <p>Not a member? <a href="#" id="switchToRegister">Register</a></p>
+            </form>
+          </div>
+        </div>
     </header>
     <!--Info carousel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
