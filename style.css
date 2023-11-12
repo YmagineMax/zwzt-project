@@ -549,9 +549,93 @@ header{
     padding: 20px;
     border: 1px solid #888;
     width: 30%; 
+    
   }
 
-  .close {
+#registerForm input,
+#registerForm button,
+#loginForm input,
+#loginForm button {
+    width: 100%; /* Makes each element take full width */
+    padding: 10px; /* Adds some padding for better appearance */
+    margin: 10px 0; /* Adds space between each element */
+    display: block; /* Ensures each element is a block-level element */
+  }
+
+#registerButton{
+    border-radius: 25px;
+    color: #EEEEEE;
+    background-color: #64CCC5;
+    border: none;
+}
+
+#registerButton:hover{
+    background-color: rgba(100, 204, 197, 0.8)
+}
+
+#loginForm p{
+    text-align: center;
+}
+
+#log-btn{
+    border-radius: 25px;
+    color: #EEEEEE;
+    background-color: #64CCC5;
+    border: none;
+}
+
+#log-btn:hover{
+    background-color: rgba(100, 204, 197, 0.8)
+}
+
+#reg-btn{
+    border-radius: 25px;
+    color: #EEEEEE;
+    background-color: #64CCC5;
+    border: none;
+}
+
+#reg-btn:hover{
+    background-color: rgba(100, 204, 197, 0.8)
+}
+
+#registerForm p{
+    text-align: center;
+}
+
+#switchToLogin{
+    color: #64CCC5;
+}
+
+#loginForm i{
+    color: #176B87;
+    font-size: 50px;
+    margin: 20px;
+}
+
+#loginForm i:hover{
+    color: rgba(100, 204, 197, 0.8);
+}
+
+.icons-log{
+    text-align: center;
+}
+
+.icons-reg{
+    text-align: center;
+}
+
+.icons-reg i{
+    font-size: 50px;
+    color: #053B50;
+    margin: 20px;
+}
+
+.icons-reg i:hover{
+    color: #64CCC5;
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -570,6 +654,9 @@ header{
 #registerForm input[type=text],
 #registerForm input[type=number] {
   font-size: 15px;
+  padding: 10px;
+  margin: 5px;
+
 }
 
 #registerForm button {
