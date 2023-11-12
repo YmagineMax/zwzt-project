@@ -124,6 +124,3 @@ document.getElementById('switchToLogin').addEventListener('click', function(even
   document.getElementById('registerForm').style.display = 'none';
   document.getElementById('loginForm').style.display = 'block';
 });
-
-
-
