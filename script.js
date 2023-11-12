@@ -113,9 +113,10 @@ document.getElementById("switchToRegister").addEventListener("click", function()
   var loginForm = document.getElementById("loginForm");
   var registerForm = document.getElementById("registerForm");
 
-  // Toggle visibility of forms
+  // Toggle visibility of forms within the modal
   loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
   registerForm.style.display = registerForm.style.display === "none" ? "block" : "none";
 });
+
 
 
