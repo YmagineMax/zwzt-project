@@ -109,4 +109,13 @@ document.getElementById("switchToRegister").addEventListener("click", function()
   // For example, hide the login form and show the registration form
 });
 
+document.getElementById("switchToRegister").addEventListener("click", function() {
+  var loginForm = document.getElementById("loginForm");
+  var registerForm = document.getElementById("registerForm");
+
+  // Toggle visibility of forms
+  loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+  registerForm.style.display = registerForm.style.display === "none" ? "block" : "none";
+});
+
 

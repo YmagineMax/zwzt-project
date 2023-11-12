@@ -565,6 +565,18 @@ header{
     cursor: pointer;
   }
 
+#registerForm input[type=email],
+#registerForm input[type=password],
+#registerForm input[type=text],
+#registerForm input[type=number] {
+  font-size: 15px;
+}
+
+#registerForm button {
+  border-radius: 10px;
+}
+
+
 /*Mobile version*/ 
 
 @media (max-width: 426px) {
