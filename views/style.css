@@ -369,10 +369,12 @@ header a{
   }
   
 .modal-content {
+    display: flex;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     width: 90%; /* Adjust as needed */
+    height: 90%;
     margin: auto; /* Center the modal content horizontally */
     cursor: default;
   }
@@ -671,6 +673,13 @@ header a{
 
 #registerForm button {
   border-radius: 10px;
+}
+
+#modal-challange-photo{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: auto;
 }
 
 
