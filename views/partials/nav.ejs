@@ -28,13 +28,25 @@
           <p>Nie masz konta? <a href="#" id="switchToRegister"><button id="registerButton">Zarejestruj się!</button></a></p>
         </form>
         <div id="registerForm" style="display: none;">
-          <h2>Register</h2>
+          <h2>Rejestracja</h2>
           <input type="email" placeholder="Email" name="email" id = "reg-email" required>
           <input type="password" placeholder="Potwierdź hasło" name="password" id = "reg-pass" required>
           <input type="password" placeholder="Potwierdź hasło" name="confirmPassword" id = "reg-conf-pass" required>
           <input type="text" placeholder="Szkoła lub uczelnia" name="school" id = "reg-school">
           <input type="date" placeholder="Data urodzenia" name="age" id="reg-age" required>
           <button type="submit" id = "reg-btn">Zarejestruj się</button>
+          <label>
+            <input type="checkbox" name="terms" required>
+            Oświadczam, że zapoznałem/am się z <a href="regulamin.html" class="chekboxes-a">regulaminem strony</a> i akceptuję wszystkie zawarte w nim warunki
+          </label>
+          <label>
+            <input type="checkbox" name="newsletter" class="chekboxes-a" required>
+            Zgadzam się na wysyłanie informacji dot. wyników konkursu drogą mailową
+        </label>
+        <label>
+          <input type="checkbox" name="rekru" class="chekboxes-a" required>
+          Wyrażam zgodę na udostępnienie moich danych osobowych firmom zlecającym wyzwania biznesowe na tej stronie w celu ewentualnego kontaktu rekrutacyjnego.
+        </label>
           <div class="icons-reg">
             <a href=""><i class="fa-brands fa-google"></i></a> <a href=""><i class="fa-brands fa-facebook"></i></a>
           </div>

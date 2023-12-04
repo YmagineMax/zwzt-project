@@ -228,6 +228,7 @@ header a{
 
 .body-container {
     position: relative;
+
 }
 
 .overlay {
@@ -366,6 +367,7 @@ header a{
     z-index: 10; /* Make sure it's on top of other content */
     justify-content: center;
     align-items: center;
+    overflow: auto;
   }
   
 .modal-content {
@@ -374,14 +376,19 @@ header a{
     padding: 20px;
     border-radius: 5px;
     width: 90%; /* Adjust as needed */
-    height: 90%;
+    max-height: 90%;
     margin: auto; /* Center the modal content horizontally */
     cursor: default;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
   }
 
 .close-button {
-    float: right;
+    position: absolute;
     font-size: 30px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
   }
 
@@ -677,9 +684,45 @@ header a{
 
 #modal-challange-photo{
     display: flex;
-    justify-content: center;
-    width: 40%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 25%;
     height: auto;
+}
+
+.ul-extended-info li{
+    color: black;
+    list-style-type: none;
+}
+
+.prizes-content{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+.deadline-info {
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    right: 0; /* Align to the right of the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: for visibility */
+    color: white; /* Text color */
+    padding: 5px; /* Space around the text */
+    border-radius: 0 0 0 5px; /* Rounded bottom-left corner */
+    margin: 2px;
+    /* Additional styling as needed */
+}
+
+.completed-challenges {
+    filter: grayscale(100%);
+}
+
+.checkboxes-a{
+    font-size: 1px;
+}
+
+label a{
+    font-size: 20px;
 }
 
 
@@ -815,6 +858,11 @@ header a{
         height: auto;
         border-radius: 10px; /* Optional: for rounded corners */
       }
+
+    .deadline-info{
+        font-size: 10px;
+        padding: 2px;
+    }
 
     
 
