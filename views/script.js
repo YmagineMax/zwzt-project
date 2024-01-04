@@ -124,3 +124,18 @@ document.getElementById('switchToLogin').addEventListener('click', function(even
   document.getElementById('registerForm').style.display = 'none';
   document.getElementById('loginForm').style.display = 'block';
 });
+
+
+
+var ctaButtons = document.getElementsByClassName('cta');
+
+for (var i = 0; i < ctaButtons.length; i++) {
+  ctaButtons[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('loginModal').style.display = 'block';
+  });
+}
+
+document.getElementsByClassName('close')[0].addEventListener('click', function() {
+  document.getElementById('loginModal').style.display = 'none';
+});

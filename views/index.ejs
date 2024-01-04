@@ -100,7 +100,7 @@
                 </div>
                 <div class="body-container">
                     <div class="overlay"></div>
-                    <div class="deadline-info" id="deadline-info"> <i class="far fa-calendar-alt"></i> 12/31/2023</div>
+                    <div class="deadline-info" id="deadline-info"> <i class="far fa-calendar-alt"></i> 31/12/2023</div>
                     <div class="event-info">
                         <p class="title">Wyzwanie ekologiczne</p>
                         <div class="separator"></div>
@@ -121,63 +121,51 @@
                     <div class="extended-info">
                       <div class="modal-content">
                         <span class="close-button">&times;</span>
-                        <img src="resources/placeholder1.png" id = "modal-challange-photo" >
+                        <img src="resources/placeholder1.png" id = "modal-challenge-photo" >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium rem natus nesciunt quasi dolorum harum. Voluptas explicabo aperiam architecto esse voluptatum mollitia quasi atque deserunt tenetur distinctio? Iste, at!</p>
-                        <p class="prizes-content">Nagrody:</p>
-                        <ul class="ul-extended-info">
-                          <li id="prize1">
-                            1000 zł
-                          </li>
-                          <li id="prize2">
-                            500 zł
-                          </li>
-                          <li id="prize3"> 
-                            500 zł
-                          </li>
-                        </ul>
-                        <h3 class="prizes-content">Informacje:</h3>
-                        <ul class="ul-extended-info">
-                          Deadline: <p id="deadline-info"></p>
-                          Konkurs dla: <p id="school-type-chall"></p>
-                        </ul>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-container">
-              <div class="img-container">
-                  <img src="resources/logo-2.png" alt="Event image">
-              </div>
-              <div class="body-container">
-                  <div class="overlay"></div>
-                  <div class="deadline-info" id="deadline-info"> <i class="far fa-calendar-alt"></i> 12/31/2023</div>
-                  <div class="event-info">
-                      <p class="title">Wyzwanie ekologiczne</p>
-                      <div class="separator"></div>
-                      <p class="info-partner">PWC</p>
-                      <p class="prize">Pula nagród: 2000 zł</p>
-                      <div class="additional-info">
-                          <p class="info">
-                            <i class="fa-solid fa-school"></i>
-                              Dla: Szkół Wyższych
-                          </p>
-  
-                          <p class="info description">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit? <span>more...</span>
-                          </p>
+                        <div class="info-container">
+                          <h3 class="prizes-content"> <i class="fa-solid fa-trophy"></i> Nagrody:</h3>
+                          <ul class="ul-extended-info">
+                            <p>1. miejsce</p>
+                            <li id="prize1">
+                            1000 zł + 100pkt rankingowych
+                            </li>
+                            <p>2. miejsce</p>
+                            <li id="prize2">
+                              500 zł + 75pkt rankingowych
+                            </li>
+                            <p>3. miejsce</p>
+                            <li id="prize3"> 
+                              500 zł + 50pkt rankingowych
+                            </li>
+                              <p>Miejsca od  4 do 10 otrzymują punkty rankigowe:</p>
+                              <hr> 
+                              <p id="prize4-10"> 4. miejsce - 40pkt <br> 5. miejsce - 35 pkt <br> 6. miejsce - 30pkt <br> 7. miejsce - 25pkt <br> 8. miejsce - 20pkt 
+                              <br>9. miejsce - 15pkt <br>10. miejsce - 10pkt</p>
+                            </p>
+                            <p>Drużyny spoza TOP10 otrzymują po 5pkt rankingowych</p>
+                          </ul>
+                          <h3 class="prizes-content"><i class="fa-solid fa-info"></i>Informacje:</h3>
+                          <ul class="ul-extended-info">
+                            <p>Deadline: <p id="deadline-info"></p>
+                            <p>Konkurs dla: <p id="school-type-chall"></p>
+                            <p>Format: PPTX/PDF</p>
+                            <p>Maksymalna ilośc slajdów: 10 (włącznie z slajdem tytułowym i slajdem zakończeniowym)</p>
+                            <p>*tutaj plik* szczegóły wyzwania</p>
+                          </ul>
+                        </div>
+                        <br>
+                          <div id="drop-area">
+                            <hr>
+                            <h3>Udalo wam się wykonać zadanie? Super - wyślij je do oceny!</h3>
+                            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                            <label class="button" for="fileElem">Wyślij skończone rozwiązanie</label>
+                          </div>
+                        </div>
                       </div>
                   </div>
-                  <button class="action">Weź udział</button>
-                  <div class="extended-info">
-                    <div class="modal-content">
-                      <span class="close-button">&times;</span>
-                      <p>Extended information goes here...</p>
-                      <p>testing if everything is alright</p>
-                    </div>
-                  </div>
               </div>
-              </div>
-      
+            
       </section>
       <!-- Completed challenges section-->
       <div class="show_cmpted">
@@ -224,7 +212,7 @@
           <div class="abt-us-container">
             <div class="about-us-content">
               <div class="about-us-text">
-                <h1 class="section-header">O nas</h2>
+                <h1 class="section-header">O nas</h2> <!-
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis placeat iure dicta eum repellat animi at ex, culpa, corrupti, architecto cum? Aut quasi vitae labore nulla vel praesentium cupiditate odit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nam officia ullam veniam similique sit modi voluptatum harum ex commodi eaque laborum nesciunt quo ipsam quibusdam, expedita saepe hic sint?.</p>
                 <!-- Add more paragraphs as needed -->
               </div>
@@ -240,9 +228,143 @@
             </div>
           </div>
       </section>
+      <!-- Ranking section-->
       <section class="ranking" id="ranking">
-        <h1 class="section-header">Ranking</h1>
+        <!-- Table for Szkola Średnia -->
+      <div class="table-container">
+        <div class="ranking-header">Ranking</div>
+          <div class="table-wrapper">
+            <div class="table-header">Szkoła średnia</div>
+              <table id="highSchoolRanking">
+                <thead>
+                    <tr>
+                      <th>Pozycja</th>
+                      <th>Nazwa drużyny</th>
+                      <th>Punkty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Team X</td>
+                    <td>1200</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                 </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                  </tr>
+              </table>
+          </div>
+        <!-- Table for Szkoła Wyższa -->
+          <div class="table-wrapper">
+            <div class="table-header">Szkoła wyższa</div>
+              <table id="universityRanking">
+              <thead>
+                  <tr>
+                    <th>Pozycja</th>
+                    <th>Nazwa drużyny</th>
+                    <th>Punkty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Team X</td>
+                  <td>1200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Team Y</td>
+                    <td>1150</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                  </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Team Y</td>
+                  <td>1150</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+        </div>
       </section>
+
+      <!-- FAQ Section-->
       <section class="faq" id="faq">
         <h1 class="section-header">FAQ</h1>
         <div class="faq-item">

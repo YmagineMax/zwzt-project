@@ -90,7 +90,7 @@ header a{
 .toggle-button .bar{
     height: 3px;
     width: 100%;
-    background-color: #EEEEEE;
+    background-color: #053B50;
     border-radius: 10px;
 }
 
@@ -372,6 +372,8 @@ header a{
   
 .modal-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -414,6 +416,7 @@ header a{
 .socials i{
     font-size: 50px;
     margin: 20px;
+    color: #053B50;
 }
 
 .socials i:hover{
@@ -655,7 +658,7 @@ header a{
 }
 
 .close {
-    color: #aaa;
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -682,12 +685,12 @@ header a{
   border-radius: 10px;
 }
 
-#modal-challange-photo{
+#modal-challenge-photo{
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 25%;
+    width: 5%;
     height: auto;
+    margin-top: 300px;
+    margin-bottom: 25px;
 }
 
 .ul-extended-info li{
@@ -722,8 +725,105 @@ header a{
 }
 
 label a{
-    font-size: 20px;
+    font-size: 16px;
 }
+
+#log-btn, #registerButton, #reg-btn{
+    background-color: #053B50;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center; /* Vertically center align the checkbox and label */
+    margin-bottom: 10px; /* Add some space between each checkbox */
+}
+
+.form-checkbox label {
+    margin-right: 5px; /* Space between checkbox and label */
+    cursor: pointer; /* Optional: makes it clear the label is clickable */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Space between tables */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+tr{
+    background-color: #EEEEEE;
+}
+
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+table {
+    margin: 10px;
+    max-width: 400px; /* Adjust as needed */
+    table-layout: fixed;
+}
+
+td, th {
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    white-space: nowrap; 
+}
+
+.table-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.table-wrapper {
+    flex: 1 0 200px; /* Adjust as needed */
+    margin: 10px;
+    max-width: 400px; /* Adjust as needed */
+}
+
+.ranking-header{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.ranking-header, .table-header {
+    color: #EEEEEE;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container * {
+    margin: 15px; /* Adjust as needed */
+}
+
+
 
 
 /*Mobile version*/ 
@@ -847,6 +947,7 @@ label a{
     .socials i{
         font-size: 25px;
         margin: 10px;
+        color: #053B50;
     }
 
     .about-us-text p{
@@ -864,7 +965,53 @@ label a{
         padding: 2px;
     }
 
+    .item-container .img-container img {
+        display: block; /* Change this to 'none' if you want to hide the image */
+      }
+
+    .info-container p {
+        font-size: 10px;
+    }
+
+    .info-container h3 {
+        font-size: 15px;
+    }
+
+    .info-container ul li {
+        font-size: 10px;
+    }
     
+    .extended-info{
+        font-size: 12px;
+    }
+    
+    #drop-area h3{
+        font-size: 12px;
+    }
+
+    .info-container{
+        display: block;
+        justify-content: center;
+    }
+
+    .info-container img{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    footer h3{
+        font-size: 15px;
+    }
+    
+    .footer-contac li{
+        font-size: 12px;
+    }
+
 
 }
 
@@ -875,7 +1022,6 @@ label a{
     header{
         display: flex;
         justify-content: flex-end;
-        padding: 10px;
     }
 
     .nav__links li a{

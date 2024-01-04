@@ -35,18 +35,18 @@
           <input type="text" placeholder="Szkoła lub uczelnia" name="school" id = "reg-school">
           <input type="date" placeholder="Data urodzenia" name="age" id="reg-age" required>
           <button type="submit" id = "reg-btn">Zarejestruj się</button>
-          <label>
-            <input type="checkbox" name="terms" required>
-            Oświadczam, że zapoznałem/am się z <a href="regulamin.html" class="chekboxes-a">regulaminem strony</a> i akceptuję wszystkie zawarte w nim warunki
-          </label>
-          <label>
-            <input type="checkbox" name="newsletter" class="chekboxes-a" required>
-            Zgadzam się na wysyłanie informacji dot. wyników konkursu drogą mailową
-        </label>
-        <label>
-          <input type="checkbox" name="rekru" class="chekboxes-a" required>
-          Wyrażam zgodę na udostępnienie moich danych osobowych firmom zlecającym wyzwania biznesowe na tej stronie w celu ewentualnego kontaktu rekrutacyjnego.
-        </label>
+          <div class="form-checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms"> Oświadczam, że zapoznałem/am się z <a href="regulamin.html" class="chekboxes-a">regulaminem strony</a> i akceptuję wszystkie zawarte w nim warunki</label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Zgadzam się na wysyłanie informacji dot. wyników konkursu drogą mailową</label>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="rekru" name="rekru">
+          <label for="rekru">Wyrażam zgodę na udostępnienie moich danych osobowych firmom zlecającym wyzwania biznesowe na tej stronie w celu ewentualnego kontaktu rekrutacyjnego.</label>
+        </div>
           <div class="icons-reg">
             <a href=""><i class="fa-brands fa-google"></i></a> <a href=""><i class="fa-brands fa-facebook"></i></a>
           </div>
